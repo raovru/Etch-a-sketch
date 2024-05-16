@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .square {
+    width: calc(100% / var(--n));
+    height: calc(100% / var(--n));
+    background-color: #ccc; /* Or any color you prefer */
+    border: 1px solid #000; /* Optional: Add border for better visualization */
+    box-sizing: border-box; /* Make sure border size is included in the width and height */
+  }
+#container{
+    height: 700px;
+    width: 700px;
+}
+  
