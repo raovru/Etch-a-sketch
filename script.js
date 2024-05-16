@@ -9,6 +9,28 @@ function createSquares(n) {
     }
   }
   
-  // Create a 16x16 grid of squares
-  createSquares(8);
+  // Create an n*n grid of squares
+
+  // for each div, let us change the background color:
+
+  //prompt message and button handling:
+
+  function prompt_msg(){
+    
+    const n = window.prompt("Enter the number of squares to create your own grid");
+    createSquares(n);
+      const hover = document.querySelectorAll(".square");
+
+  hover.forEach((square) => {
+    square.addEventListener("mouseover", ()=>
+    {
+      square.setAttribute("style", "background-color: black;")
+    });
+  });
+  }
+
+  const btn = document.querySelector("#button");
+  btn.addEventListener("click", prompt_msg);
+
   
+
